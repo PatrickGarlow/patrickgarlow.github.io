@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Patrick Garlow Portfolio</title>
+    <link rel="stylesheet" href="css/coding_project.css">
+    <link rel="stylesheet" href="css/page_template.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+  </head>
+  <body>
+    <div class="about">
+      <div class="portrait">
+        <img src="images/self-image.png" alt="">
+      </div>
+      <div class="bio">
+        <h2>
+          My name is Patrick. I enjoy making fun and creative
+          coding and graphic deisgn projects. Check  them out below!
+        </h2>
+      </div>
+    </div>
+    <div class="content">
+      <div class="nav-bar">
+        <div class="page-links">
+          <a href="index.html">
+            <div class="active">
+              Coding Projects
+            </div>
+          </a>
+          <a href="graphic_design.html">
+            <div class="inactive">
+              Graphic Design
+            </div>
+          </a>
+          <a href="resume.html">
+            <div class="inactive">
+              Resume
+            </div>
+          </a>
+          <a href="about_me.html">
+            <div class="inactive">
+              About Me
+            </div>
+          </a>
+        </div>
+        <div class="social">
+          <a href="https://github.com/PatrickGarlow"><img src="images/github.png" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/patrick-garlow/"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+
+      <div class="page-content">
+        <div class="left-side">
+            <iframe id="video" src="https://www.youtube.com/embed/9F3OZignTfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          <div class="project-buttons">
+            <a href="http://pgarlow.pythonanywhere.com/" style="margin-right:2px;">View Project</a>
+            <a href="https://github.com/PatrickGarlow/read-it" style="margin-left:2px;">View Code</a>
+          </div>
+        </div>
+        <div class="right-side">
+          <h1>Read It</h1>
+          <h2>Languages Used:<bl> HTML<bl>,<bl> Python<bl>,<bl> CSS<bl></h2>
+          <h2>Project Description:</h2>
+          <h3>
+            “Tinder for books”. This is a web app created using Django, that presents people with
+            a selection of books. You can like a book and save it to your profile. Also every book
+            has links to read or purchase the book. Collected data on thousands of
+            books by building a web scraping algorithm that scraped goodreads.com,
+            Google, Amazon, Barnes and Noble, and Audible. You can take a quiz that changes what
+            genre of books are being seen.
+          </h3>
+          <h2>Challenges:</h2>
+          <h3>Saving liked books to a users profile was a challenge for a while. I had to learn
+          more about the models Django used, and eventually decided to use a many to many relationship
+          model to store a users liked books.
+          <br>
+          <br>
+          Another challenge was figuring out how to present 12 genres in different percentages to the user, so
+          that they aren't given just one genre. I solved this by taking their "genre score" from their
+          profile and using those numbers to determine the percentages of the genres I should be showing.
+          </h3>
+          <h2>Lessons Learned:</h2>
+          <h3>When you can use built in models or classes to save time, so you are not reinventing
+          the wheel. Built in things work well and can be implemented however you need to.</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

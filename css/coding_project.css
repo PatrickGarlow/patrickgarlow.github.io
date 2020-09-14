@@ -1,0 +1,85 @@
+.left-side {
+  padding: 10px;
+  font-family: "Poppins";
+}
+.left-side a {
+  width: 50%;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  color:white;
+  background-color: #2f5b89;
+  border: None;
+  text-align: center;
+  padding-top:20px;
+  margin-bottom: 0px;
+}
+.left-side a:hover {
+  transition: .5s;
+  color: gold;
+  background-color: #3c74af;
+}
+.project-buttons {
+  display: flex;
+}
+.right-side {
+  margin-top: -25px;
+  padding: 10px;
+  font-family: "Poppins";
+  font-weight: lighter;
+}
+bl {
+  color: #2f5b89;
+}
+@media only screen and (max-width: 768px) {
+  #video {
+    height:200px;
+    width:100%;
+  }
+  .page-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px 1px;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width:769px) {
+  #video {
+    height:250px;
+    width:100%;
+  }
+  .page-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px 1px;
+  }
+}
+@media only screen and (max-width: 11992px) and (min-width:992px) {
+  #video {
+    height:300px;
+    width:100%;
+  }
+  .page-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px 1px;
+  }
+}
+@media only screen and (min-width:1200px) {
+  #video {
+    height:400px;
+    width:100%;
+  }
+  .left-side {
+    padding: 20px;
+  }
+  .page-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px 1px;
+  }
+}
+@media only screen and (max-width: 685px) {
+  .social{
+    display: none;
+  }
+}

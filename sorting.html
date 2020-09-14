@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Patrick Garlow Portfolio</title>
+    <link rel="stylesheet" href="css/coding_project.css">
+    <link rel="stylesheet" href="css/page_template.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+  </head>
+  <body>
+    <div class="about">
+      <div class="portrait">
+        <img src="images/self-image.png" alt="">
+      </div>
+      <div class="bio">
+        <h2>
+          My name is Patrick. I enjoy making fun and creative
+          coding and graphic deisgn projects. Check  them out below!
+        </h2>
+      </div>
+    </div>
+    <div class="content">
+      <div class="nav-bar">
+        <div class="page-links">
+          <a href="index.html">
+            <div class="active">
+              Coding Projects
+            </div>
+          </a>
+          <a href="graphic_design.html">
+            <div class="inactive">
+              Graphic Design
+            </div>
+          </a>
+          <a href="resume.html">
+            <div class="inactive">
+              Resume
+            </div>
+          </a>
+          <a href="about_me.html">
+            <div class="inactive">
+              About Me
+            </div>
+          </a>
+        </div>
+        <div class="social">
+          <a href="https://github.com/PatrickGarlow"><img src="images/github.png" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/patrick-garlow/"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+
+      <div class="page-content">
+        <div class="left-side">
+          <iframe id="video" src="https://www.youtube.com/embed/FQrlg2wS_VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          <div class="project-buttons">
+            <a href="https://patrickgarlow.github.io/sorting-visualizer/" style="margin-right:2px;">View Project</a>
+            <a href="https://github.com/PatrickGarlow/sorting-visualizer/tree/master" style="margin-left:2px;">View Code</a>
+          </div>
+        </div>
+        <div class="right-side">
+          <h1>Sorting Algorithm Visualizer</h1>
+          <h2>Languages Used:<bl> HTML</bl>,<bl> JavaScript</bl></h2>
+          <h2>Project Description:</h2>
+          <h3>
+            This is a Sorting Algorithm Visualizer, that visualizes six different
+            sorting algorithms. Those being: Bubble, Heap, Selection, Insertion, Quick, and Merge.
+            I build this using React.
+          </h3>
+          <h2>Challenges:</h2>
+          <h3>
+            One challenge I had was figuring out how to visually move the bars
+            while still implementing the algorithms properly. The way I decided to do this
+            was write the algorithms in JavaScript as normal and add the changes to an "annimation"
+            list. Then that list would get read and visualized. Each entry in the annimation list
+            included the position, color, and height the bar should be.
+            <br>
+            <br>
+            Another issue was visualizing all the algorithms at the same time. When displaying all six
+            graphs they are not individual graphs, but one graph. To solve this I split up the large graph into six smaller
+            graphs and sent those into the sorthing algorithms. After recieving the annimation lists
+            from those I then made one large annimation list that would perform one annimation
+            per graph at a time.
+          </h3>
+          <h2>Lessons Learned:</h2>
+          <h3>
+            There is always a way to solve the problem if you take a step
+            back and be creative with the solution. I learned this from visualizing
+            all six at the same time.
+          </h3>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
