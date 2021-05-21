@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Patrick Garlow Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/coding-project.css">
+    <link rel="stylesheet" href="css/design-project.css">
+    <link rel="stylesheet" href="css/education.css">
+  </head>
+  <body>
+    
+    <div class="header">
+      <div class="header-left">
+        <img src="img/profile.png" alt="">
+      </div>
+      <div class="header-right">
+        <h1 class="name">Patrick Garlow</h1>
+        <h3 class="role">Software Developer</h3>
+        <div class="social">
+          <a href="https://www.instagram.com/wolrag_/"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/patrick-garlow/"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/PatrickGarlow"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="mailto:patrickgarlow@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="content content-display">
+      <div class="about-me section">
+        <h2 class="section-title">About me</h2>
+        <p class="section-text">
+          Hi, my name is Patrick!
+          <br>
+          <br>
+          Recent graduate with a bachelor’s degree in Computer Science from Bradley University. 
+          I love front-end and web development and making things that are visually intersting and useful.
+          Checkout some of my coding and graphic design projects below!
+          <br>
+          <br>
+          I am a very intellectually curious person and love to learn new things about science, technology, engineering, and much more.
+          <br>
+          <br>
+          In my free time I like to wood work, watch movies, play video games, and read.
+          <br>
+          <br>
+          If you have any questions or want to reach out, you can do so at <bl>patrickgarlow@gmail.com</bl>
+        </p>
+      </div>
+      <div class="coding-projects section">
+        <h2 class="section-title">Coding Projects</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <img src="img/readit.jpg" class="project-picture">
+              <h2 class="project-title">Read It</h2>
+            </div>
+            <div class="accordion-answer">
+              <div class="page-content">
+                <div class="left-side">
+                    <iframe id="video" src="https://www.youtube.com/embed/9F3OZignTfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          <div class="project-buttons">
+                    <a href="http://pgarlow.pythonanywhere.com/" style="margin-right:2px;">View Project</a>
+                    <a href="https://github.com/PatrickGarlow/read-it" style="margin-left:2px;">View Code</a>
+                  </div>
+                </div>
+                <div class="right-side">
+                  <p>Languages Used:<bl> HTML<bl>,<bl> Python<bl>,<bl> CSS<bl></p>
+                  <h2>Project Description:</h2>
+                  <p>
+                    “Tinder for books”. This is a web app created using Django, that presents people with
+                    a selection of books. You can like a book and save it to your profile. Also every book
+                    has links to read or purchase the book. Collected data on thousands of
+                    books by building a web scraping algorithm that scraped goodreads.com,
+                    Google, Amazon, Barnes and Noble, and Audible. You can take a quiz that changes what
+                    genre of books are being seen.
+                  </p>
+                  <h2>Challenges:</h2>
+                  <p>Saving liked books to a users profile was a challenge for a while. I had to learn
+                  more about the models Django used, and eventually decided to use a many to many relationship
+                  model to store a users liked books.
+                  <br>
+                  <br>
+                  Another challenge was figuring out how to present 12 genres in different percentages to the user, so
+                  that they aren't given just one genre. I solved this by taking their "genre score" from their
+                  profile and using those numbers to determine the percentages of the genres I should be showing.
+                  </p>
+                  <h2>Lessons Learned:</h2>
+                  <p>When you can use built in models or classes to save time, so you are not reinventing
+                  the wheel. Built in things work well and can be implemented however you need to.
+                  </p>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <img src="img/sorting.PNG" class="project-picture">
+              <h2 class="project-title">Sorting Visualizer</h2>
+            </div>
+            <div class="accordion-answer">
+              <div class="page-content">
+                <div class="left-side">
+                  <iframe id="video" src="https://www.youtube.com/embed/FQrlg2wS_VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          <div class="project-buttons">
+                    <a href="https://patrickgarlow.github.io/sorting-visualizer/" style="margin-right:2px;">View Project</a>
+                    <a href="https://github.com/PatrickGarlow/sorting-visualizer/tree/master" style="margin-left:2px;">View Code</a>
+                  </div>
+                </div>
+                <div class="right-side">
+                  <p>Languages Used:<bl> HTML</bl>,<bl> JavaScript</bl></p>
+                  <h2>Project Description:</h2>
+                  <p>
+                    This is a Sorting Algorithm Visualizer, that visualizes six different
+                    sorting algorithms. Those being: Bubble, Heap, Selection, Insertion, Quick, and Merge.
+                    I built this using React.
+                  </p>
+                  <h2>Challenges:</h2>
+                  <p>
+                    One challenge I had was figuring out how to visually move the bars
+                    while still implementing the algorithms properly. The way I decided to do this
+                    was write the algorithms in JavaScript as normal and add the changes to an "annimation"
+                    list. Then that list would get read and visualized. Each entry in the annimation list
+                    included the position, color, and height the bar should be.
+                    <br>
+                    <br>
+                    Another issue was visualizing all the algorithms at the same time. When displaying all six
+                    graphs they are not individual graphs, but one graph. To solve this I split up the large graph into six smaller
+                    graphs and sent those into the sorthing algorithms. After recieving the annimation lists
+                    from those I then made one large annimation list that would perform one annimation
+                    per graph at a time.
+                  </p>
+                  <h2>Lessons Learned:</h2>
+                  <p>
+                    There is always a way to solve the problem if you take a step
+                    back and be creative with the solution. I learned this from visualizing
+                    all six at the same time.
+                  </p>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <img src="img/pathfinding.PNG" class="project-picture">
+              <h2 class="project-title">Pathfinding Visualizer</h2>
+            </div>
+            <div class="accordion-answer">
+              <div class="page-content">
+                <div class="left-side">
+                  <iframe id="video" src="https://www.youtube.com/embed/AxGr5DR0BCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="project-buttons">
+                    <a href="https://github.com/PatrickGarlow/Pathfinding-Visualizer" style="width:100%;">View Code</a>
+                  </div>
+                </div>
+                <div class="right-side">
+                  <p>Languages Used:<bl> Python<bl></h2>
+                  <h2>Project Description:</h2>
+                  <p>
+                    This is a pathfinding visualizer for Dijkstra's, Breadth-first Search,
+                    and A-star Algorithms. This project was completed using Python and Pygame.
+                  </p>
+                  <h2>Challenges:</h2>
+                  <p>
+                    Applying the algorithms in a visual way was a challenge. For us it is easy to
+                    see which squares are connected (nodes), so I had to implement a finding available
+                    neighbors method for every node.
+                  </p>
+                  <h2>Lessons Learned:</h2>
+                  <p>
+                    Making a diagram or drawing the problem out on a whiteboard will
+                    help you to problem solve before actually writing the code. It will
+                    allow you to work through the problem logically before coding it.
+                  </p>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <img src="img/minecraft.png" class="project-picture">
+              <h2 class="project-title">Minecraft MySQL Database</h2>
+            </div>
+            <div class="accordion-answer">
+              <div class="page-content">
+                <div class="left-side">
+                  <img src="img/minecraft/Minecraft_Database_Diagram.png" alt="" style="width:100%;">
+                  <div class="project-buttons">
+                    <a href="https://github.com/PatrickGarlow/Minecraft-Database" style="width:100%;">View Code</a>
+                  </div>
+                </div>
+                <div class="right-side">
+                  <h2>Languages Used:<bl> SQL</bl></h2>
+                  <h2>Project Description:</h2>
+                  <p>
+                    As a course project I created a database for minecraft. This included
+                    various blocks, items, tools, and enchantments that all have relations
+                    with eachother. This is just a sampling of the games content as a proof
+                    of concept. Not everything from the game is included and some of the
+                    values for enchanting are not exact.
+                  </p>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <img src="img/enigma.jpg" class="project-picture">
+              <h2 class="project-title">Enigma</h2>
+            </div>
+            <div class="accordion-answer">
+              <div class="page-content">
+                <div class="left-side">
+                  <iframe id="video" src="https://www.youtube.com/embed/mCK8NKxk5AE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="project-buttons">
+                    <a href="https://github.com/PatrickGarlow/Enigma-GUI" style="width:100%">View Code</a>
+                  </div>
+                </div>
+                <div class="right-side">
+                  <h2>Languages Used:<bl> Python</bl></h2>
+                  <h2>Project Description:</h2>
+                  <p>
+                    This is a recreation of the German Encryption machine from The second World War.
+                    I had already built this in Java only using the commandline for input,
+                    but as I was learning about User Interfaces I decided to make it again
+                    in python. I used PyQt5 for this project.
+                  </p>
+                  <h2>Challenges:</h2>
+                  <p>
+                    Having both a manual encruption, letter by letter, and automatic was a challenge at first.
+                    For the first part they operate differently. One letter versus many. I looped through each letter
+                    and then combined the encrypted output again. This saved me many lines of
+                    code that I would've used had I written two different but identical programs.
+                  </p>
+                  <h2>Lessons Learned:</h2>
+                  <p>
+                    I had build this in commandline my freshman year of college using Java. I learned
+                    that just bacause I had done that and knew the solution for that case, didn't mean
+                    it would translate to this new language and using a GUI. I went back to basics of
+                    drawing out how the device worked and built up the python from there.
+                  </p>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <img src="img/snake.png" class="project-picture">
+              <h2 class="project-title">Snake</h2>
+            </div>
+            <div class="accordion-answer">
+              <div class="page-content">
+                <div class="left-side">
+                  <iframe id="video" src="https://www.youtube.com/embed/6hQvzuuTMg4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                  <div class="project-buttons">
+                    <a href="https://github.com/PatrickGarlow/Snake" style="margin-left:2px;width:100%">View Code</a>
+                  </div>
+                </div>
+                <div class="right-side">
+                  <h2>Language Used: <bl>Python</bl></h2>
+                  <h2>Project Description:</h2>
+                  <p>
+                    This is a recreation of the class game "Snake" using python and pygame.
+                    Not only can the snake eat the food, but also a powerup that doubles
+                    the food eaten and one that slows the game down for a short period of time.
+                  </p>
+                  <h2>Challenges:</h2>
+                  <p>
+                    This was my first time using the PyGame module. Learning how to
+                    draw the squares and the text to the window in a way that made everything
+                    look nice was a speedbump.
+                    <br>
+                    Another challenge was adding the different powerups. For the "slow" effect
+                    I slowed the game speed for a number of seconds.
+                  </p>
+                  <h2>Lessons Learned:</h2>
+                  <p>
+                    Adding features late in development can be challenging to work background
+                    past code.
+                  </p>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="design-projects section">
+        <h2 class="section-title">Design Projects</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <img src="img/summit.png" class="project-picture">
+              <h2 class="project-title">Brand Summit Meeting</h2>
+            </div>
+            <div class="accordion-answer">
+              <div class="page-content">
+                <div class="left-side">
+                  <div class="picture_different">
+                    <img src="img/summit/cubetxt2.png" alt="">
+                    <img src="img/summit/lightbulb.png" alt="">
+                    <img src="img/summit/motherboard_plain.jpg" alt="">
+                    <img src="img/summit/motherboardF.jpg" alt="">
+                  </div>
+                </div>
+                <div class="right-side">
+                  <h1>Brand Summit Meeting</h1>
+                  <p>
+                    I was asked to design sinage and handouts for a branding meeting attended by
+                    Maytag, Whirlpool, KitchenAid, and Amana. The theme for this meeting was:
+                    <bl> Think Differently</bl>. This included clean two-dimensional designs
+                    that fit with the current trends the client was describing in the meeting.
+                    Another aspect was to show a "techy" side hense the motherboard and lightbulb.
+                    With the cube the idea was that you could solve the puzzle normally or you can tThink Differently
+                    and solve it another way.
+                    <br>
+                    <br>
+                    For this project I focused on consulting with the client and drafting the ideas before developing
+                    any concept fully. This way I as able to know exactly what the client wanted and the intentions behind each decision.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <img src="img/ssh.png" class="project-picture">
+              <h2 class="project-title">Accounting Firm Advertisements</h2>
+            </div>
+            <div class="accordion-answer">
+              <div class="page-content">
+                <div class="left-side">
+                  <div class="picture_student">
+                    <img src="img/ssh/crains_draft8.jpg" alt="">
+                    <img src="img/ssh/SSHad.jpg" alt="">
+                  </div>
+                </div>
+                <div class="right-side">
+                  <h1>Shepard Schwartz & Harris Advertisement</h1>
+                  <p>
+                     An accounting firm first reached out to me to make an advertisement
+                     to be placed in the Crains Business magazine congradulating two of
+                     their partners being named "The most Influential Women in Accounting".
+                     Making their pictures hexigon shaped to mirror their logo was a detail they appreciated.
+                     <br>
+                     <br>
+                     I was contacted again to make a full page black and white advertisement
+                     celebrating their 85th year. The clients and I discussed font and text
+                     placement so nothing would clash with the background.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <img src="img/wedding.png" class="project-picture">
+              <h2 class="project-title">Wedding Signage</h2>
+            </div>
+            <div class="accordion-answer">
+              <div class="page-content">
+                <div class="left-side">
+                  <div class="picture_different">
+                    <img src="img/wedding/WeddingStuff-01.png" alt="Wedding1">
+                    <img src="img/wedding/WeddingStuff-02.png" alt="Wedding2">
+                    <img src="img/wedding/WeddingStuff-03.png" alt="Wedding3">
+                    <img src="img/wedding/WeddingStuff-04.png" alt="Wedding4">
+                    <img src="img/wedding/WeddingStuff-05.png" alt="Wedding5">
+                    <img src="img/wedding/WeddingStuff-06.png" alt="Wedding6">
+                    <img src="img/wedding/WeddingStuff-07.png" alt="Wedding7">
+                    <img src="img/wedding/WeddingStuff-08.png" alt="Wedding8">
+                    <img src="img/wedding/WeddingStuff-09.png" alt="Wedding9">
+                    <img src="img/wedding/WeddingStuff-10.png" alt="Wedding10">
+                    <img src="img/wedding/WeddingStuff-11.png" alt="Wedding11">
+                    <img src="img/wedding/WeddingStuff-12.png" alt="Wedding12">
+                  </div>
+                </div>
+                <div class="right-side">
+                  <h1>Wedding Signage</h1>
+                  <p>
+                    Having a wedding during a pandemic is difficult. From wearing masks, to socially
+                    distancing, to a lower capicty at the church and reception. I worked with the bride
+                    to ensure that that there was proper sinage for the church and reception
+                    so that everyone was following policies while still feeling like the wedding
+                    she always wanted. The client had given me a pallet and some general ideas
+                    on what the designs should be, other than that I had free reign.
+                    <br>
+                    <br>
+                    This project taught me to focus more on the concept, idea, and feeling of
+                    a design and figure out how to translate that to the current situation.
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <img src="img/ball.png" class="project-picture">
+              <h2 class="project-title">American Legion Annual Ball</h2>
+            </div>
+            <div class="accordion-answer">
+              <div class="page-content">
+                <div class="left-side">
+                  <div class="picture_different">
+                    <img src="img/ball/invitationV203Front.png" alt="">
+                    <img src="img/ball/postcardBFinal.png" alt="">
+                    <img src="img/ball/invitationV5Back.png" alt="">
+                    <img src="img/ball/postcardFFinal.png" alt="">
+                  </div>
+                </div>
+                <div class="right-side">
+                  <p>
+                    I was asked to create RSVP cards and dinner schedules for my local post
+                    of the American Legion for their Centennial Military Ball. The outlines and stars
+                    resemble metal to feel more upscale. I added the stars from the American
+                    flag to fit the theming of the event. I also left a space for the address stickers
+                    and return labels. The times are in military time to fit the theme and
+                    most of the guests are veterens and have used it extensivley.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <img src="img/student.png" class="project-picture">
+              <h2 class="project-title">Student Senate Posters</h2>
+            </div>
+            <div class="accordion-answer">
+              <div class="page-content">
+                <div class="left-side">
+                  <div class="picture_student">
+                    <img src="img/student/josh.png" alt="">
+                    <img src="img/student/collin.png" alt="">
+                  </div>
+                </div>
+                <div class="right-side">
+                  <p>
+                    My friends asked if I could design a flyer for them for their upcoming
+                    school senate elections. In talking with them they liked the older style
+                    Kennedy and Nixon campaign posters. I paired that style with their school colors
+                    (Loyola and Purdue University).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <img src="img/shirts.png" class="project-picture">
+              <h2 class="project-title">Fraternity Shirts</h2>
+            </div>
+            <div class="accordion-answer">
+              <div class="page-content">
+                <div class="left-side">
+                  <div class="picture_same">
+                    <img src="img/fraternity_shirts/1.png" alt="">
+                    <img src="img/fraternity_shirts/2.png" alt="">
+                    <img src="img/fraternity_shirts/3.png" alt="">
+                    <img src="img/fraternity_shirts/4.png" alt="">
+                    <img src="img/fraternity_shirts/5.png" alt="">
+                    <img src="img/fraternity_shirts/6.png" alt="">
+                    <img src="img/fraternity_shirts/7.png" alt="">
+                  </div>
+                </div>
+                <div class="right-side">
+                  <p>
+                    During my time in my fraternity I have designed a few different shirts
+                    for our formal recruitment period. These take from different eras and styles.
+                    The top and bottom were used for two years. Some are fun and some are
+                    more formal while still representing the kind and fun nature of my
+                    chapter.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="work-exp section">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="job">
+          <h3 class="job-title">IT Intern - CDW</h3>
+          <h4 class="job-desc"></h4>
+          <ul>
+            <li>Collaborated on developing a company-wide success sharing platform that boosted employee morale and communication.</li>
+            <li>Deployed more than 1,000 devices to customers, coworkers, and U.S. 2020 Census Personnel.</li>
+          </ul>
+          
+          
+        </div>
+        <div class="job">
+          <h3 class="job-title">Development Intern - GlidePath Power</h3>
+          <h4 class="job-desc"></h4>
+          <ul>
+            <li>Managed migration of company storage systems to Microsoft Sharepoint, providing easy access to valuable information.</li>
+            <li>Automated back-end processes, using Microsoft Power Automate, that eased project development.</li>
+          </ul>
+          
+          
+        </div>
+        <div class="job">
+          <h3 class="job-title">Engineering Intern</h3>
+          <h4 class="job-desc"></h4>
+          <ul>
+            <li>Developed comprehensive user manuals for customers as well as to be used in sales talks.</li>
+            <li>Completed all tasks, including decluttering and simplifying hundreds of machine blueprints.</li>
+          </ul>
+          
+          
+        </div>
+      </div>
+
+      <div class="lang-tech section">
+        <h2 class="section-title">Languages/Technologies</h2>
+        <ul class="no-bullet">
+          <li>JavaScript (React, Node)</li>
+          <li>HTML/CSS</li>
+          <li>Python (Django, PyQt)</li>
+          <li>SQL (MySQL, SQLite)</li>
+          <li>REST APIs</li>
+          <li>Git/Github</li>
+          <li>Microsoft Office</li>
+          <li>C++</li>
+          <li>Java</li>
+          <li>Visual Studio</li>
+          <li>Jupyter Notebook</li>
+        </ul>
+      </div>
+
+      <div class="education section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-content">
+          <div class="education-left">
+            <img src="svg/graduation-cap.svg">
+          </div>
+          <div class="education-right">
+            <h3>Bradley University</h3>
+            <ul class="no-bullet">
+              <li><p><i>B.S. Computer Science</i></p></li>
+            </ul>
+            
+            <br>
+            <h4>Noteworthy Courses: </h4>
+            <ul>
+              <li>
+                Software Development; Using methods in the Software Development Lifecycle (SDLC) developed a proposal for a University Library.
+              </li>
+              <li>
+                Database Management; Created multi-table relational MySQL database for Minecraft entities including tables on blocks, items, enchantments, and tools. 
+              </li>
+              <li>
+                Data Science; Built multiple machine learning algorithms from scratch using Jupyter Notebook. Performed data visualization on large multidimensional datasets.
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        
+      </div>
+
+      <div class="certification section">
+        <h2 class="section-title">Certifications</h2>
+        <ul class="no-bullet">
+          <li>Google Project Management</li>
+          <li>Lean Six Sigma</li>
+          <li>Microsoft Office Specialist</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
