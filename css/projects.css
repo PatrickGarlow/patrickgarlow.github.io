@@ -1,0 +1,89 @@
+.accordion {
+  margin-top: 10px;
+}
+.accordion-item {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(233, 233, 233);
+  -webkit-transition: background-color .5s;
+}
+.accordion-title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 20px;
+  border-bottom-right-radius: 10px; -moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px; -moz-border-radius-topright: 10px; -webkit-border-top-right-radius: 10px;
+}
+.project-title {
+  padding-left: 20px;
+ 
+}
+.accordion-title::after {
+  content: "+";
+  font-size: 4em;
+  margin-left: auto;
+}
+.accordion-item:hover {
+  
+  background-color: rgb(201, 201, 201);
+  -webkit-transition: background-color .5s;
+}
+
+.active-header::after {
+  content: "-";
+}
+
+.accordion-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 1000ms ease max-height;
+}
+.project-picture {
+  margin: 0px;
+  padding:0px;
+  border-bottom-left-radius: 10px; -moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px; -moz-border-radius-topleft: 10px; -webkit-border-top-left-radius: 10px;
+}
+
+.active-header .project-picture {
+  border-bottom-left-radius: 0px; -moz-border-radius-bottomleft: 0px; -webkit-border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 10px; -moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px;
+  transition: 1000ms;
+}
+bl {
+  color: #D9A21B;
+}
+
+@media only screen and (max-width: 768px) {
+  .project-picture {
+    height: 150px;
+  }
+  .accordion-title {
+    max-height: 150px;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width:769px) {
+  .project-picture {
+    height: 150px;
+  }
+  .accordion-title {
+    max-height: 150px;
+  }
+}
+@media only screen and (max-width: 11992px) and (min-width:992px) {
+  .project-picture {
+    height: 100px;
+  }
+  .accordion-title {
+    max-height: 100px;
+  }
+}
+@media only screen and (min-width:1200px) {
+  .project-picture {
+    height: 100px;
+  }
+  .accordion-title {
+    max-height: 100px;
+  }
+}

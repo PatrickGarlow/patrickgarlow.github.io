@@ -1,0 +1,64 @@
+.left-side a {
+  width: 50%;
+  height: 50px;
+  cursor: pointer;
+  color:white;
+  background-color: #3C4573;
+  border-radius: 10px;
+  text-align: center;
+  padding-top:20px;
+  margin-bottom: 0px;
+}
+.left-side a:hover {
+  transition: .5s;
+  background-color: #4d6095;
+}
+.right-side {
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+.project-buttons {
+  display: flex;
+}
+.video {
+  width:100%;
+}
+.project-content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+  .project-title {
+    font-size: 2em;
+  }
+  .right-side {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width:769px) {
+  
+  .project-title {
+    font-size: 2.5em;
+  }
+  .right-side {
+    font-size: 2em;
+  }
+  .left-side a {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 11992px) and (min-width:992px) {
+  
+  .left-side a {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width:1200px) {
+  
+  .left-side a {
+    font-size: 1.5em;
+  }
+}
