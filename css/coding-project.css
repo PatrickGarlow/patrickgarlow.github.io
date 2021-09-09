@@ -1,18 +1,20 @@
-.left-side a {
-  width: 50%;
-  height: 50px;
+.project-buttons a {
+  width: 100%;
   cursor: pointer;
-  color:white;
-  background-color: #3C4573;
+  color:#3C4573;
+  border: 4px solid #3C4573;
   border-radius: 10px;
   text-align: center;
-  padding-top:20px;
-  margin-bottom: 0px;
+  padding: 10px;
 }
-.left-side a:hover {
-  transition: .5s;
+.project-buttons a:hover {
   background-color: #4d6095;
+  color: white;
+  border: 4px solid #4d6095;
+  transition: .5s;
 }
+
+
 .right-side {
   padding-top:10px;
   padding-bottom: 10px;

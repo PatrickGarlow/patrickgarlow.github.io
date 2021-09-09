@@ -24,7 +24,12 @@
   font-size: 4em;
   margin-left: auto;
 }
-.accordion-item:hover {
+.accordion-title:hover ~ .accordion-answer, .accordion-title:hover ~ .accordion-title{
+  
+  background-color: rgb(201, 201, 201);
+  -webkit-transition: background-color .5s;
+}
+.accordion-title:hover{
   
   background-color: rgb(201, 201, 201);
   -webkit-transition: background-color .5s;
