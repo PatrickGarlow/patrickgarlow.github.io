@@ -1,538 +1,426 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Patrick Garlow Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <link rel="icon" type="image/png" href="img/icon.png">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/coding-project.css">
-    <link rel="stylesheet" href="css/design-project.css">
-    <link rel="stylesheet" href="css/education.css">
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <title>Patrick Garlow - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <nav>
+    <div class="left-nav">
+      <div class="email nav-link">
+        <a href="mailto:patrickgarlow@gmail.com">
+          <img src="svg/mail.svg" alt="" class="img-link">
+          patrickgarlow@gmail.com
+        </a>
+      </div>
+    </div>
+    <div class="right-nav">
+      <div class="resume nav-link open-button0" onclick="openDialog('resume0')">
+        
+        <button class="resume-button">
+          <img src="svg/document.svg" alt="" class="img-link">
+          Resume
+        </button>
+      </div>
+      <div class="resume nav-link">
+        
+          <a href="https://www.linkedin.com/in/patrick-garlow/">
+          <img src="svg/linkedin.svg" alt="" class="img-link">
+          LinkedIn
+        </a>
+      </div>
+      <div class="resume nav-link">
+        
+        <a href="https://www.linkedin.com/in/patrick-garlow/">
+          <img src="svg/github.svg" alt="" class="img-link">
+          Github
+        </a>
+      </div>
+
+      <dialog class="modal" id="resume0-dialog">
+        <div class="project-header">
+          <h2 class="section-header">Resume</h2>
+          <button class="close-button" onclick="closeDialog('resume0')">
+            <img src="svg/xSymbol.svg" class="x-symbol">
+          </button>
+        </div>
+        <hr class="project-line">
+        <img class="resume-file" src="img/PatrickGarlowResume.jpg" >
+        <div class="download-button">
+          <img src="svg/download.svg" alt="" class="img-link">
+          <a href="/PatrickGarlowResume.pdf" download>Download</a>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero-left">
+      <img src="img/hero-left.png" alt="">
+    </div>
+    <div class="hero-middle">
+      <div class="hero-middle-contents">
+        <h1>Hi, I'm <pur>Patrick</pur></h1>
+        <h3>and I can make your project</h3>
+        <div class="tools-preview">
+          <img src="svg/python.svg" alt="Python" title="Python">
+          <img src="svg/react.svg" alt="React" title="React">
+          <img src="svg/javascript.svg" alt="JavaScript" title="JavaScript">
+          <img src="svg/django.svg" alt="Django" title="Django">
+          <img src="svg/figma.svg" alt="Figma" title="Figma">
+        </div>
+      </div>
+      
+    </div>
+    <div class="hero-right">
+      <img src="img/hero-right.png" alt="">
+    </div>
+  </section>
+  <section class="about-me">
+    <div class="about-me-left">
+      <h1 class="section-header">About me</h1>
+      <img src="img/profile.png" alt="" class="profile-pic">
+    </div>
+    <div class="about-me-right">
+      <h2 class="about-me-bio">I’m a frontend developer! Just ask me and you will have your website or mobile app.</h2>
+      <button onclick="openDialog('about-me0')">
+        <img src="svg/diagonal-arrow.svg" alt="">
+        Want to learn more?
+      </button>
+    </div>
+
+    <dialog class="modal" id="about-me0-dialog">
+      <div class="project-header">
+        <h2 class="section-header">More about me!</h2>
+        <button class="close-button" onclick="closeDialog('about-me0')">
+          <img src="svg/xSymbol.svg" class="x-symbol">
+        </button>
+      </div>
+      <hr class="project-line">
+      <div class="about-me-dialog-content">
+        <div class="about-me-dialog-left">
+          <img src="img/about_me1.jpg" alt="">
+          <img src="img/about_me2.jpg" alt="">
+          <img src="img/profile.png" alt="">
+        </div>
+        <div class="about-me-dialog-right">
+          <ul>
+            <li>I'm an experienced professional with a bachelor's degree in Computer Science from Bradley University. Throughout my academic journey, I acquired a strong foundation in various aspects of computer science, particularly focusing on front-end and web development. I have a deep passion for creating visually captivating and highly functional websites and applications.</li>
+            <li>Beyond my educational background, I am a naturally inquisitive individual, constantly seeking new knowledge and insights across a wide range of subjects. My intellectual curiosity extends beyond computer science and into areas such as science, technology, engineering, and much more. This curiosity fuels my motivation to stay up-to-date with the latest industry trends and advancements.</li>
+            <li>During my leisure time, I pursue a variety of interests. Woodworking is a cherished hobby of mine, allowing me to exercise creativity and craftsmanship while creating unique and tangible objects. Additionally, I find solace and inspiration in watching movies, exploring captivating narratives and immersing myself in cinematic artistry. I also enjoy playing video games, finding them to be a source of entertainment and a way to unwind. Lastly, reading is a fundamental part of my life, as it broadens my perspectives and fuels my imagination.</li>
+            <li>If you have any questions or wish to connect, please feel free to reach out to me at     <a href="mailto:patrickgarlow@gmail.com" class="email-link">patrickgarlow@gmail.com</a>
+              . I am always open to engaging in meaningful conversations and exploring exciting opportunities within the realm of computer science and beyond.</li>
+          </ul>
+        </div>  
+      </div>
+      
+
+    </dialog>
+
+  </section>
+  <section class="projects">
+    <h1 class="section-header education-header">Projects</h1>
+    <hr class="section-line" align="left">
+    <ul class="project-filter-buttons">
+      <li class="sort-list active" data-filter="all">All</li>
+      <li class="sort-list" data-filter="javascript">Javascript</li>
+      <li class="sort-list" data-filter="python">Python</li>
+    </ul>
+
+    <div class="project-thumbnails">
+      <div class="project" data-item="javascript" onclick="openDialog('project1')">
+        <img src="img/house_party_thumb.png" class="project-thumbnail open-button1">
+      </div>
+      <div class="project" data-item="python" onclick="openDialog('project2')">
+        <img src="img/movie_surprise_thumb.png" class="project-thumbnail open-button2">
+      </div>
+      <div class="project" data-item="python" onclick="openDialog('project3')">
+        <img src="img/readit_thumb.png" class="project-thumbnail open-button3">
+      </div>
+      <div class="project" data-item="javascript" onclick="openDialog('project4')">
+        <img src="img/sorting_thumb.png" class="project-thumbnail open-button4">
+      </div>
+      <div class="project" data-item="python" onclick="openDialog('project5')">
+        <img src="img/snake_thumb.png" class="project-thumbnail open-button5">
+      </div>
+      <div class="project" data-item="python" onclick="openDialog('project6')">
+        <img src="img/enigma_gui_thumb.png" class="project-thumbnail open-button6">
+      </div>
+      <div class="project" data-item="python" onclick="openDialog('project7')">
+        <img src="img/pathfinding_thumb.png" class="project-thumbnail open-button7">
+      </div>
+      <div class="project" data-item="mysql" onclick="openDialog('project8')">
+        <img src="img/minecraft_db_thumb.png" class="project-thumbnail open-button8">
+      </div>
+      <div class="project" data-item="java" onclick="openDialog('project9')">
+        <img src="img/enigma_cmd_thumb.png" class="project-thumbnail open-button9">
+      </div>
     
-    <div class="header">
-      <div class="header-left">
-        <img src="img/profile.png" alt="">
-      </div>
-      <div class="header-right">
-        <h1 class="name">Patrick Garlow</h1>
-        <h3 class="role">Front End Developer</h3>
-        <div class="social">
-          <a href="https://www.instagram.com/wolrag_/"><i class="fa fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/patrick-garlow/"><i class="fa fa-linkedin"></i></a>
-          <a href="https://github.com/PatrickGarlow"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a href="mailto:patrickgarlow@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-        </div>
+
+  <dialog class="modal" id="project1-dialog">
+    <div class="project-header">
+      <h2>House Party</h2>
+      <button class="close-button" onclick="closeDialog('project1')">
+        <img src="svg/xSymbol.svg" class="x-symbol">
+      </button>
+    </div>
+    
+    <h3 class="project-lang">Django (Python), React.js (JavaScript) , HTML/CSS</h3>
+    <hr class="project-line">
+    <div class="project-video-container">
+      <iframe width="400" height="315" src="https://www.youtube.com/embed/4gZC5Ndtokc" title="House Party" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+    </div>
+    <div class="project-buttons">
+      <a href="https://github.com/PatrickGarlow/House-Party">View Code</a>
+    </div>
+    
+    <p>
+      This is a web application built using django and the django rest framework for the backend and react for the front end. This site is responsive and can be connected to from a mobile device. The idea behind this project was to allow guests of a party to control the hosts Spotify account though this site allowing them to play/pause the music or skip the current song. These controls are done using the Spotify API.    </p>
+    
+  </dialog>
+  <dialog class="modal" id="project2-dialog">
+    <div class="project-header">
+      <h2>Movie Surprise</h2>
+      <button class="close-button" onclick="closeDialog('project2')">
+        <img src="svg/xSymbol.svg" class="x-symbol">
+      </button>
+    </div>
+    <h3 class="project-lang">Django, Python</h3>
+    <hr class="project-line">
+    <div class="project-video-container">    <iframe width="454" height="256" src="https://www.youtube.com/embed/68w0Sq6LNXM" title="MovieSurprise! DEMO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+</div>
+    <div class="project-buttons">
+      <a href="https://github.com/FrankCalabrese/MovieSurprise">View Code</a>
+    </div>
+    
+    <p>
+      This is a movie recommendation website built using Django. The goal of this site was to add a new rating for movies that would allow for better surprise movie recommendations. This project was a group senior capstone in which I was the full stack developer.
+    </p>
+    
+  </dialog>
+  <dialog class="modal" id="project3-dialog">
+    <div class="project-header">
+      <h2>ReadIt</h2>
+      <button class="close-button" onclick="closeDialog('project3')">
+        <img src="svg/xSymbol.svg" class="x-symbol">
+      </button>
+    </div>
+    <h3 class="project-lang">HTML, Python, CSS, BeautifulSoup</h3>
+    <hr class="project-line">
+    <div class="project-video-container">    <iframe width="454" height="256" src="https://www.youtube.com/embed/AA7aDWp3Ypo" title="Read It Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div><div class="project-buttons">
+      <a href="http://pgarlow.pythonanywhere.com/">View Project</a>
+      <a href="https://github.com/PatrickGarlow/read-it">View Code</a>
+    </div>
+    
+    <p>
+      “Tinder for books”. This is a web app created using Django, that presents people with a selection of books. You can like a book and save it to your profile. Every book has links to read or purchase. Collected data on thousands of books by building a web scraping algorithm that scraped goodreads.com, Google, Amazon, Barnes and Noble, and Audible. Users can take a quiz that changes what genre of books are being seen.
+    </p>
+    
+  </dialog>
+  <dialog class="modal" id="project4-dialog">
+    <div class="project-header">
+      <h2>Sorting Visualizer</h2>
+      <button class="close-button" onclick="closeDialog('project4')"">
+        <img src="svg/xSymbol.svg" class="x-symbol">
+      </button>
+    </div>
+    <h3 class="project-lang">React, HTML, JavaScript, CSS</h3>
+    <hr class="project-line">
+    <div class="project-video-container">    <iframe width="454" height="256" src="https://www.youtube.com/embed/FQrlg2wS_VU" title="Sorthing Algorithm Visualizer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+</div><div class="project-buttons">
+      <a href="https://patrickgarlow.github.io/sorting-visualizer/">View Project</a>
+      <a href="https://github.com/PatrickGarlow/sorting-visualizer/tree/master">View Code</a>
+    </div>
+    
+    <p>
+      This is a Sorting Algorithm Visualizer, that visualizes six different sorting algorithms. Those being: Bubble, Heap, Selection, Insertion, Quick, and Merge. I built this using React.
+    </p>
+    
+  </dialog>
+  <dialog class="modal" id="project5-dialog">
+    <div class="project-header">
+      <h2>Snake</h2>
+      <button class="close-button" onclick="closeDialog('project5')">
+        <img src="svg/xSymbol.svg" class="x-symbol">
+      </button>
+    </div>
+    <h3 class="project-lang">JavaScript, HTML, CSS</h3>
+    <hr class="project-line">
+    <div class="project-video-container">    <iframe width="454" height="256" src="https://www.youtube.com/embed/cuNpL_X2Q6g" title="Snake JavaScript" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+      
+</div><div class="project-buttons">
+      <a href="https://patrickgarlow.github.io/Snake-JavaScript/">View Project</a>
+      <a href="https://github.com/PatrickGarlow/Snake-JavaScript">View Code</a>
+    </div>
+    
+    <p>
+      This is a recreation of the class game "Snake" using vanilla JavaScript and HTML/CSS. Every so often a special blue food will appear that will count as two foods. The player can select whatever color they want for the snake to be.
+    </p>
+    
+  </dialog>
+  <dialog class="modal" id="project6-dialog">
+    <div class="project-header">
+      <h2>Enigma GUI</h2>
+      <button class="close-button" onclick="closeDialog('project6')">
+        <img src="svg/xSymbol.svg" class="x-symbol">
+      </button>
+    </div>
+    <h3 class="project-lang">Python</h3>
+    <hr class="project-line">
+    <div class="project-video-container">    <iframe width="454" height="256" src="https://www.youtube.com/embed/mCK8NKxk5AE" title="Patrick Garlow Enigma Python" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+</div><div class="project-buttons">
+      <a href="https://drive.google.com/file/d/1S5imRdKrbEBa0cvoFz6-_KpDEzKnPH9X/view?usp=sharing">Download Project</a>
+      <a href="https://github.com/PatrickGarlow/Enigma-GUI">View Code</a>
+    </div>
+    
+    <p>
+      This is a recreation of the German Encryption machine from The Second World War. I had already built this in Java only using the command line for input, but as I was learning about User Interfaces I decided to make it again in python. I used PyQt5 for this project.
+    </p>
+    
+  </dialog>
+  <dialog class="modal" id="project7-dialog">
+    <div class="project-header">
+      <h2>Pathfinding Visualizer</h2>
+      <button class="close-button" onclick="closeDialog('project7')">
+        <img src="svg/xSymbol.svg" class="x-symbol">
+      </button>
+    </div>
+    <h3 class="project-lang">Languages and Tools</h3>
+    <hr class="project-line">
+    <div class="project-video-container">    <iframe width="454" height="256" src="https://www.youtube.com/embed/AxGr5DR0BCE" title="Pathfinding Visualizer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+</div><div class="project-buttons">
+      <a href="https://github.com/PatrickGarlow/Pathfinding-Visualizer/raw/master/pathfinding_visualizer.exe">Download Project</a>
+      <a href="https://github.com/PatrickGarlow/Pathfinding-Visualizer">View Code</a>
+    </div>
+    
+    <p>
+      This is a pathfinding visualizer for Dijkstra's, Breadth-first Search, and A-star Algorithms. This project was completed using Python and Pygame.    </p>
+    
+  </dialog>
+  <dialog class="modal" id="project8-dialog">
+    <div class="project-header">
+      <h2>Minecraft Database</h2>
+      <button class="close-button" onclick="closeDialog('project8')">
+        <img src="svg/xSymbol.svg" class="x-symbol">
+      </button>
+    </div>
+    <h3 class="project-lang">MySQL</h3>
+    <hr class="project-line">
+    <img class="project-image"src="img/minecraft/Minecraft_Database_Diagram.png" alt="">    
+    <div class="project-buttons">
+      <a href="https://github.com/PatrickGarlow/Minecraft-Database">View Code</a>
+    </div>
+    
+    <p>
+      As a course project I created a database for Minecraft. This included various blocks, items, tools, and enchantments that all have relations with each other. This is just a sampling of the games content as a proof of concept. Not everything from the game is included and some of the values for enchanting are not exact.    </p>
+    
+  </dialog>
+  <dialog class="modal" id="project9-dialog">
+    <div class="project-header">
+      <h2>Enigma Command Line</h2>
+      <button class="close-button" onclick="closeDialog('project9')">
+        <img src="svg/xSymbol.svg" class="x-symbol">
+      </button>
+    </div>
+    <h3 class="project-lang">Java</h3>
+    <hr class="project-line">
+    <div class="project-video-container">    <iframe width="560" height="315" src="https://www.youtube.com/embed/mCK8NKxk5AE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+</div> <div class="project-buttons">
+      <a href="https://github.com/PatrickGarlow/Enigma-Command-Line">View Code</a>
+    </div>
+    
+    <p>
+      In WWII Germany created the Enigma encryption machine that had a plug board and rotating gears for a total of 15,000,000,000,000 possible settings that changed daily. In Fall of 2017 I replicated this machine as a side project in Java.
+    </p>
+    
+  </dialog>
+  </section>
+
+  <section class="lang">
+    <div class="lang-section">
+      <h3 class="section-header">Languages</h3>
+      <hr class="section-line">
+      <div class="lang-section-img">
+        <img src="svg/html.svg" alt="HTML" title="HTML">
+        <img src="svg/javascript.svg" alt="JavaScript" title="JavaScript">
+        <img src="svg/css.svg" alt="CSS" title="CSS">
+        <img src="svg/python.svg" alt="Python" title="Python">
       </div>
     </div>
-    <div class="content content-display">
-      <div class="about-me section">
-        <h2 class="section-title">About me</h2>
-        <p class="section-text">
-          Hi, my name is Patrick!
-          <br>
-          <br>
-          Recent graduate with a bachelor’s degree in Computer Science from Bradley University. 
-          I love front-end and web development, making things that are visually interesting and useful.
-          Checkout some of my coding and graphic design projects below!
-          <br>
-          <br>
-          I am a very intellectually curious person and love to learn new things about science, technology, engineering, and much more.
-          <br>
-          <br>
-          In my free time I like to wood work, watch movies, play video games, and read.
-          <br>
-          <br>
-          If you have any questions or want to reach out, you can do so at <bl>patrickgarlow@gmail.com</bl>
-        </p>
+    <div class="lang-section">
+      <h3 class="section-header">Frameworks</h3>
+      <hr class="section-line">
+      <div class="lang-section-img">
+        <img src="svg/react.svg" alt="React" title="React">
+        <img src="svg/django.svg" alt="Django" title="Django">
+        <img src="svg/Bootstrap.svg" alt="Bootstrap" title="Bootstrap">
       </div>
-      <div class="coding-projects section">
-        <h2 class="section-title">Projects</h2>
-        <div class="accordion">
-
-
-          <div class="accordion-item">
-            <div class="accordion-title">
-              <img src="img/HouseParty.png" class="project-picture">
-              <h2 class="project-title">House Party</h2>
-            </div>
-            <div class="accordion-answer">
-              <div class="project-content">
-                <div class="left-side">
-                  <iframe class="video" src="https://www.youtube.com/embed/4gZC5Ndtokc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
-                  <div class="project-buttons">
-                    <a href="https://github.com/PatrickGarlow/House-Party">View Code</a>
-                  </div>
-                </div>
-                <div class="right-side">
-                  <p>Languages Used:<bl> Django (Python)<bl>,<bl> React.js (JavaScript) <bl>,<bl> HTML/CSS<bl></p>
-                  <h2>Project Description:</h2>
-                  <p>
-                    This is a web application built using django and the django rest framework for the backend and react
-                    for the front end. This site is responsive and can be connected to from a mobile device.
-                    The idea behind this project was to allow guests of a party to control the hosts Spotify account though
-                    this site allowing them to play/pause the music or skip the current song. These controls are done using 
-                    the Spotify API.
-                  </p>
-                  <h2>Challenges:</h2>
-                  <p>
-                  This was the first time I communicated with an API. Working through the documentation and figuring out how to receive information
-                  and sending function requests took a little bit of time to understand and implement.
-                  </p>
-                  <h2>Lessons Learned:</h2>
-                  <p>
-                    Make a mockup for different views of all the pages. This helped me plan how to style elements and plan ahead. 
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-title">
-              <img src="img/MovieSurprise.png" class="project-picture">
-              <h2 class="project-title">Movie Surprise</h2>
-            </div>
-            <div class="accordion-answer">
-              <div class="project-content">
-                <div class="left-side">
-                  <iframe class="video" src="https://www.youtube.com/embed/68w0Sq6LNXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <div class="project-buttons">
-                    <a href="https://github.com/FrankCalabrese/MovieSurprise">View Code</a>
-                  </div>
-                </div>
-                <div class="right-side">
-                  <p>Languages Used:<bl> Python<bl></h2>
-                  <h2>Project Description:</h2>
-                  <p>
-                    This is a movie recommendation website built using Django. The goal of this site was to add a new rating for
-                    movies that would allow for better surprise movie recommendations. This project was a group senior capstone in which I was the
-                    full stack developer.
-                  </p>
-                  <h2>Challenges:</h2>
-                  <p>
-                    We had trouble connecting the external database and the site. Both parties had dependencies on their machines that wouldn't allow them 
-                    to communicate. We decided to put everything on a final host machine with no dependencies and got them to work together.
-                  </p>
-                  <h2>Lessons Learned:</h2>
-                  <p>
-                    Knowing how to deploy a site from the beginning helps in the long run. 
-                  </p>
-                  <p>
-                    Planning use cases, pages, and how algorithms will work in the planning phase really makes the construction phase much easier. 
-                  </p>
-                </div>
-              </div>
-
-
-
-            </div>
-          </div>
-
-
-          <div class="accordion-item">
-            <div class="accordion-title">
-              <img src="img/readit.jpg" class="project-picture">
-              <h2 class="project-title">Read It</h2>
-            </div>
-            <div class="accordion-answer">
-              <div class="project-content">
-                <div class="left-side">
-                    <iframe class="video" src="https://www.youtube.com/embed/AA7aDWp3Ypo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="project-buttons">
-                      <a href="http://pgarlow.pythonanywhere.com/">View Deployment</a>
-                      <a href="https://github.com/PatrickGarlow/read-it">View Code</a>
-                    </div>
-                </div>
-                <div class="right-side">
-                  <p>Languages Used:<bl> HTML<bl>,<bl> Python<bl>,<bl> CSS<bl></p>
-                  <h2>Project Description:</h2>
-                  <p>
-                    “Tinder for books”. This is a web app created using Django, that presents people with
-                    a selection of books. You can like a book and save it to your profile. Every book
-                    has links to read or purchase. Collected data on thousands of
-                    books by building a web scraping algorithm that scraped goodreads.com,
-                    Google, Amazon, Barnes and Noble, and Audible. Users can take a quiz that changes what
-                    genre of books are being seen.
-                  </p>
-                  <h2>Challenges:</h2>
-                  <p>Saving liked books to a users profile was a challenge for a while. I had to learn
-                  more about the models Django used, and eventually decided to use a many to many relationship
-                  model to store a users liked books.
-                  <br>
-                  <br>
-                  Another challenge was figuring out how to present 12 genres in different percentages to the user, so
-                  that they aren't given just one genre. I solved this by taking their "genre score" from their
-                  profile and using those numbers to determine the percentages of the genres I should be showing.
-                  </p>
-                  <h2>Lessons Learned:</h2>
-                  <p>When you can, use built in models or classes to save time, so you are not reinventing
-                  the wheel. Built in things work well and can be implemented however you need to.
-                  </p>
-                </div>
-              </div>
-
-
-
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-title">
-              <img src="img/sorting.PNG" class="project-picture">
-              <h2 class="project-title">Sorting Visualizer</h2>
-            </div>
-            <div class="accordion-answer">
-              <div class="project-content">
-                <div class="left-side">
-                  <iframe class="video" src="https://www.youtube.com/embed/FQrlg2wS_VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          <div class="project-buttons">
-                    <a href="https://patrickgarlow.github.io/sorting-visualizer/">View Project</a>
-                    <a href="https://github.com/PatrickGarlow/sorting-visualizer/tree/master">View Code</a>
-                  </div>
-                </div>
-                <div class="right-side">
-                  <p>Languages Used:<bl> HTML</bl>,<bl> JavaScript</bl></p>
-                  <h2>Project Description:</h2>
-                  <p>
-                    This is a Sorting Algorithm Visualizer, that visualizes six different sorting algorithms. Those being: Bubble, Heap, Selection, Insertion, Quick, and Merge. I built this using React.
-                  </p>
-                  <h2>Challenges:</h2>
-                  <p>
-                    One challenge I had was figuring out how to visually move the bars while still implementing the algorithms properly. The way I decided to do this was to write the algorithms in JavaScript as normal and add the changes to an "animation" list. Then that list would get read and visualized. Each entry in the animation list included the position, color, and height the bar should be.
-                    <br>
-                    <br>
-                    Another issue was visualizing all the algorithms at the same time. When displaying all six graphs they are not individual graphs, but one graph. To solve this I split up the large graph into six smaller graphs and sent those into the sorting algorithms. After receiving the animation lists from those I then made one large animation list that would perform one animation per graph at a time.
-                  </p>
-                  <h2>Lessons Learned:</h2>
-                  <p>
-                    There is always a way to solve the problem if you take a step back and be creative with the solution. I learned this from visualizing all six at the same time.
-                  </p>
-                </div>
-              </div>
-
-
-
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-title">
-              <img src="img/snake.png" class="project-picture">
-              <h2 class="project-title">Snake JavaScript</h2>
-            </div>
-            <div class="accordion-answer">
-              <div class="project-content">
-                <div class="left-side">
-                  <iframe class="video" src="https://www.youtube.com/embed/cuNpL_X2Q6g?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-                  <div class="project-buttons">
-                    <a href="https://patrickgarlow.github.io/Snake-JavaScript/">View Project</a>
-                    <a href="https://github.com/PatrickGarlow/Snake-JavaScript">View Code</a>
-                  </div>
-                </div>
-                <div class="right-side">
-                  <h2>Language Used: <bl>JavaScript, HTML, CSS</bl></h2>
-                  <h2>Project Description:</h2>
-                  <p>
-                    This is a recreation of the class game "Snake" using vanilla JavaScript and HTML/CSS.
-                    Every so often a special blue food will appear that will count as two foods. 
-                    The player can select whatever color they want for the snake to be.
-                  </p>
-                  <h2>Challenges:</h2>
-                  <p>
-                    Overall this was a relatively easy project. The only thing that took me a second to figure out was how to change the color of the snake
-                    when the player selects a color. To do this I used radio buttons and when the player was ready to start the game it looked to see which radio
-                    button was selected, and used that value.
-                  </p>
-                  <h2>Lessons Learned:</h2>
-                  <p>
-                    Planning how you want something to look and function ahead of time saves a lot of time and confusion down the road.
-                  </p>
-                </div>
-              </div>
-
-
-
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-title">
-              <img src="img/pathfinding.PNG" class="project-picture">
-              <h2 class="project-title">Pathfinding Visualizer</h2>
-            </div>
-            <div class="accordion-answer">
-              <div class="project-content">
-                <div class="left-side">
-                  <iframe class="video" src="https://www.youtube.com/embed/AxGr5DR0BCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <div class="project-buttons">
-                    <a href="https://github.com/PatrickGarlow/Pathfinding-Visualizer/raw/master/pathfinding_visualizer.exe">Download Project</a>
-                    <a href="https://github.com/PatrickGarlow/Pathfinding-Visualizer" >View Code</a>
-                  </div>
-                </div>
-                <div class="right-side">
-                  <p>Languages Used:<bl> Python<bl></h2>
-                  <h2>Project Description:</h2>
-                  <p>
-                    This is a pathfinding visualizer for Dijkstra's, Breadth-first Search,
-                    and A-star Algorithms. This project was completed using Python and Pygame.
-                  </p>
-                  <h2>Challenges:</h2>
-                  <p>
-                    Applying the algorithms in a visual way was a challenge. For us it is easy to
-                    see which squares are connected (nodes), so I had to implement a finding available
-                    neighbors method for every node.
-                  </p>
-                  <h2>Lessons Learned:</h2>
-                  <p>
-                    Making a diagram or drawing the problem out on a whiteboard will
-                    help you to problem solve before actually writing the code. It will
-                    allow you to work through the problem logically before coding it.
-                  </p>
-                </div>
-              </div>
-
-
-
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-title">
-              <img src="img/minecraft.png" class="project-picture">
-              <h2 class="project-title">Minecraft MySQL Database</h2>
-            </div>
-            <div class="accordion-answer">
-              <div class="project-content">
-                <div class="left-side">
-                  <img src="img/minecraft/Minecraft_Database_Diagram.png" alt="" style="width:100%;">
-                  <div class="project-buttons">
-                    <a href="https://github.com/PatrickGarlow/Minecraft-Database">View Code</a>
-                  </div>
-                </div>
-                <div class="right-side">
-                  <h2>Languages Used:<bl> SQL</bl></h2>
-                  <h2>Project Description:</h2>
-                  <p>
-                    As a course project I created a database for Minecraft. This included
-                    various blocks, items, tools, and enchantments that all have relations
-                    with each other. This is just a sampling of the games content as a proof
-                    of concept. Not everything from the game is included and some of the
-                    values for enchanting are not exact.
-                  </p>
-                </div>
-              </div>
-
-
-
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-title">
-              <img src="img/enigma.jpg" class="project-picture">
-              <h2 class="project-title">Enigma</h2>
-            </div>
-            <div class="accordion-answer">
-              <div class="project-content">
-                <div class="left-side">
-                  <iframe class="video" src="https://www.youtube.com/embed/mCK8NKxk5AE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <div class="project-buttons">
-                    <a href="https://drive.google.com/file/d/1S5imRdKrbEBa0cvoFz6-_KpDEzKnPH9X/view?usp=sharing">Download Project</a>
-                    <a href="https://github.com/PatrickGarlow/Enigma-GUI">View Code</a>
-                  </div>
-                </div>
-                <div class="right-side">
-                  <h2>Languages Used:<bl> Python</bl></h2>
-                  <h2>Project Description:</h2>
-                  <p>
-                    This is a recreation of the German Encryption machine from The Second World War. I had already built this in Java only using the command line for input, but as I was learning about User Interfaces I decided to make it again in python. I used PyQt5 for this project.
-                  </p>
-                  <h2>Challenges:</h2>
-                  <p>
-                    Having both manual encryptions, letter by letter, and automatic was a challenge at first. For the first part, they operate differently. One letter versus many. I looped through each letter and then combined the encrypted output again. This saved me many lines of code that I would've used had I written two different but identical programs.
-                  </p>
-                  <h2>Lessons Learned:</h2>
-                  <p>
-                    I had built this in command line my freshman year of college using Java. I learned that just because I had done that and knew the solution for that case, didn't mean it would translate to this new language and using a GUI. I went back to the basics of drawing out how the device worked and built up the python from there.
-                  </p>
-                </div>
-              </div>
-
-
-
-            </div>
-          </div>
-
-          
-        </div>
-      </div>
-
-      
-
-      <div class="work-exp section">
-        <h2 class="section-title">Work Experience</h2>
-
-
-        <div class="job">
-          <h3 class="job-title">Resort Custodian - The Walt Disney Company</h3>
-          <h4 class="job-desc"></h4>
-          <ul>
-            <li>Interacted with guests while working independently.</li>
-            <li>Ensured designated area was show-read and pristine for guests.</li>
-            <li>Created magical moments for guests.</li>
-          </ul>
-          
-          
-        </div>
-
-        <div class="job">
-          <h3 class="job-title">Web Developer - Phi Gamma Delta</h3>
-          <h4 class="job-desc"></h4>
-          <ul>
-            <li>Led a team of four to redevelop a dated site to be more modern, responsive, and functional.</li>
-            <li>Performed UI/UX research on graduates, undergraduates, and parents.</li>
-          </ul>
-          
-          
-        </div>
-
-        <div class="job">
-          <h3 class="job-title">IT Intern - CDW</h3>
-          <h4 class="job-desc"></h4>
-          <ul>
-            <li>Cloned computer image files on more than 1,000 devices for customers and employees.</li>
-            <li>Resolved over 100 employee device tickets quickly, resulting in minimal downtime.</li>
-            <li>Collaborated in creating an internal article website applauding employee accomplishments.</li>
-          </ul>
-          
-          
-        </div>
-        <div class="job">
-          <h3 class="job-title">Development Intern - GlidePath Power</h3>
-          <h4 class="job-desc"></h4>
-          <ul>
-            <li>Migrated storage to Microsoft Sharepoint, enabling access to information on 20 active projects.</li>
-            <li>Automated multiple back-end tasks, using Microsoft Flow, easing project development.</li>
-            <li>Set up remote desktop control capabilities on devices using TeamViewer</li>
-          </ul>
-          
-          
-        </div>
-        <div class="job">
-          <h3 class="job-title">Engineering Intern - Toyoda America</h3>
-          <h4 class="job-desc"></h4>
-          <ul>
-            <li>Developed dozens of machine user manuals that were critical to business discussions.</li>
-            <li>Streamlined hundreds of machine designs, using AutoCAD, making them easier to read.</li>
-          </ul>
-          
-          
-        </div>
-      </div>
-
-      <div class="lang-tech section">
-        <h2 class="section-title">Languages/Technologies</h2>
-        <div class="lan-tech-grid">
-            <div class="lang-tech-item">
-              <img src="svg/python.svg" class="lang-tech-picture">
-              <h3>Python</h3>
-            </div>
-            <div class="lang-tech-item">
-              <img src="svg/js.svg" class="lang-tech-picture">
-              <h3>JavaScript</h3>
-            </div>
-            <div class="lang-tech-item">
-              <img src="svg/html.svg" class="lang-tech-picture">
-              <h3>HTML</h3>
-            </div>
-            <div class="lang-tech-item">
-              <img src="svg/css.svg" class="lang-tech-picture">
-              <h3>CSS</h3>
-            </div>
-            <div class="lang-tech-item">
-              <img src="svg/django.svg" class="lang-tech-picture">
-              <h3>Django</h3>
-            </div>
-            <div class="lang-tech-item">
-              <img src="svg/react.svg" class="lang-tech-picture">
-              <h3>React</h3>
-            </div>
-            <div class="lang-tech-item">
-              <img src="svg/github.svg" class="lang-tech-picture">
-              <h3>Github</h3>
-            </div>
-            <div class="lang-tech-item">
-              <img src="svg/photoshop.svg" class="lang-tech-picture">
-              <h3>Photoshop</h3>
-            </div>
-            <div class="lang-tech-item">
-              <img src="svg/ai.svg" class="lang-tech-picture">
-              <h3>Illustrator</h3>
-            </div>
-            <div class="lang-tech-item">
-              <img src="svg/office.svg" class="lang-tech-picture">
-              <h3>Microsoft Office</h3>
-            </div>
-        </div>
-      </div>
-
-      <div class="education section">
-        <h2 class="section-title">Education</h2>
-        <div class="education-content">
-          <div class="education-left">
-            <img id="cap" src="svg/graduation-cap.svg">
-          </div>
-          <div class="education-right">
-            <h3>Bradley University</h3>
-            <ul class="no-bullet">
-              <li><p><i>B.S. Computer Science</i></p></li>
-            </ul>
-            
-            <br>
-            <h4>Noteworthy Courses: </h4>
-            <ul>
-              <li>
-                Software Development; Developed a proposal for a University Library system using methodologies from the Software Development Lifecycle (SDLC), receiving a final grade of 115%.
-              </li>
-              <li>
-                Database Management; Created multi-table relational MySQL database for Minecraft entities including tables on blocks, items, enchantments, and tools. 
-              </li>
-              <li>
-                Data Science; Using Jupyter Notebook, created a number of machine learning algorithms from scratch, including K-Nearest Neighbor and Naive Bayes, testing on multi-dimensional datasets with over 60,000 entries.
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-        
-      </div>
-
-      <div class="certification section">
-        <h2 class="section-title">Certifications</h2>
-        <ul class="no-bullet">
-          <li>Google Project Management</li>
-          <li>Lean Six Sigma</li>
-          <li>Microsoft Office Specialist</li>
-        </ul>
-      </div>
-
-
-
     </div>
+    <div class="lang-section">
+      <h3 class="section-header">Design Tools</h3>
+      <hr class="section-line">
+      <div class="lang-section-img">
+        <img src="svg/photoshop.svg" alt="Photoshop" title="Photoshop">
+        <img src="svg/ai.svg" alt="Adobe Illustrator" title="Adobe Illustrator">
+        <img src="svg/figma.svg" alt="Figma" title="Figma">
+      </div>
+    </div>
+    <div class="lang-section">
+      <h3 class="section-header">Tools</h3>
+      <hr class="section-line">
+      <div class="lang-section-img">
+        <img src="svg/github.svg" alt="Github" title="Github" >
+        <img src="svg/office.svg" alt="Microsoft Office" title="Microsoft Office">
+        <img src="svg/slack.svg" alt="Slack" title="Slack">
+        <img src="svg/vscode.svg" alt="Visual Studio Code" title="Visual Studio Code">
+      </div>
+    </div>
+  </section>
 
-    <script src="js/app.js"></script>
-    <script type="text/javascript" language="javascript"> 
-      //$('.video').css('height', (9*$(window).width())/16+'px');
-      console.log($('.video').width());
-      const height = (9*$('.video').width())/16;
-      $('.video').height(height);
-      
-    </script>
-  </body>
+  <section class="education">
+    <div class="education-header">
+      <h1 class="section-header">Education</h1>
+      <hr class="section-line" align="left">
+    </div>
+    <div class="eduaction-left">
+      <div class="school-info">
+        <h2 class="university-name">Bradley University</h2>
+        <h3 class="university-degree"><i>B.S. Computer Science <br> w/ Specialization in Security</i></h3>
+      </div>
+      <img src="img/bradey.png" alt="" class="university-logo">
+    </div>
+    <div class="education-right">
+      <h2 class="courses-header">Noteworthy Courses</h2>
+      <ul class="courses-list">
+        <li>
+          Software Development Lifecycle Developed a proposal for a
+          University Library system using methodologies from the Software
+          Development Lifecycle (SDLC), receiving a final grade of 115%.
+        </li>
+        <li>
+          Database Management Created multi-table relational MySQL
+          database for Minecraft entities including tables on blocks, items,
+          enchantments, and tools.
+        </li>
+        <li>
+          Data Science Using Jupyter Notebook, created a number of
+          machine learning algorithms from scratch, including K-Nearest
+          Neighbor and Naive Bayes, testing on multi-dimensional datasets
+          with over 60,000 entries.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    If you want to know more, reach out! 
+    <br>
+    <a href="mailto:patrickgarlow@gmail.com" class="email-link">patrickgarlow@gmail.com</a>
+  </footer>
+</body>
+<script src="js/app.js"></script>
 </html>
-
